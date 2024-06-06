@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route, Navigate, Outlet } from "react-router-dom";
 
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import Gallery from "./pages/Gallery";
-import ProductView from "./pages/ProductView";
-import CrudUser from "./pages/CrudUser";
-import CrudProduct from "./pages/CrudProduct";
-import NoPage from "./pages/NoPage";
-import Login from "./pages/Login";
+import Layout from        "./views/pages/Layout";
+import Home from          "./views/pages/Home";
+import Gallery from       "./views/pages/Gallery";
+import ProductView from   "./views/pages/ProductView";
+import CrudUser from      "./views/pages/CrudUser";
+import CrudProduct from   "./views/pages/CrudProduct";
+import NoPage from        "./views/pages/NoPage";
+import Login from         "./views/pages/Login";
 
 import { useLoginContext } from './LoginContext';
 
