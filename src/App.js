@@ -9,7 +9,7 @@ import CrudProduct from   "./views/pages/CrudProduct";
 import NoPage from        "./views/pages/NoPage";
 import Login from         "./views/pages/Login";
 
-import { useLoginContext } from './LoginContext';
+import { useLoginContext } from './context/LoginContext';
 
 /**
  * Wrapper component for ROUTES THAT ARE VISIBLE ONLY FOR LOGGED IN USERS.

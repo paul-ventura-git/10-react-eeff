@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-import { useLoginContext } from '../LoginContext';
+import { useLoginContext } from '../../context/LoginContext';
 import { useNavigate } from "react-router-dom";
 
 function Navbar() {

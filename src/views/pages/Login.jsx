@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import '../assets/styles/Login.module.css'
 import image from '../assets/img/bootstrap-logo.svg'
 
-import { useLoginContext } from '../LoginContext';
+import { useLoginContext } from '../../context/LoginContext';
 
 function Login() {
 
