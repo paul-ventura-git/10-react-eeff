@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate, Outlet } from "react-router-dom
 
 import Layout from        "./views/pages/Layout";
 import Home from          "./views/pages/Home";
-import Gallery from       "./views/pages/Gallery";
+import LibroDiario from       "./views/pages/LibroDiario";
 import ProductView from   "./views/pages/ProductView";
 import CrudUser from      "./views/pages/CrudUser";
 import CrudProduct from   "./views/pages/CrudProduct";
@@ -55,7 +55,7 @@ function App() {
                 <Route index element={<Home />} />
                 <Route path="home" element={<Home />} />
                 <Route element={<ProtectedRoute isAllowed={user.username} />}>
-                  <Route path="gallery" element={<Gallery />} />
+                  <Route path="librodiario" element={<LibroDiario />} />
                   <Route path="productview" element={<ProductView />} />
                 </Route>
                 <Route 

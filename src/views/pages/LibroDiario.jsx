@@ -8,7 +8,8 @@ import Col from 'react-bootstrap/Col';
 
 import MyCard from '../components/MyCard'
 
-function Gallery() {
+function LibroDiario() {
+  /*
   let { productId } = useParams();
   let my_key = process.env.REACT_APP_ACCESS_TOKEN;
 
@@ -33,11 +34,13 @@ function Gallery() {
         setProducts(data);
       });
   }, [productId]);
+  */
   return (
     <>
       <Container> 
         <Row>  
-        {products.map((product) => (
+          <MyCard></MyCard>
+        {/*products.map((product) => (
           <Col key={product.id}>
             <MyCard 
               key={product.id}
@@ -48,11 +51,11 @@ function Gallery() {
             >
             </MyCard>
           </Col>
-        ))}
+        ))*/}
         </Row>   
       </Container>
     </>
   )
 }
 
-export default Gallery
+export default LibroDiario
