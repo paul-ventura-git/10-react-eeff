@@ -1,71 +1,79 @@
 import React from 'react'
-import Row from 'react-bootstrap/Row';
+import { Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function MyCard( props ) {
   return (
-    <div class="card text-center">
-      <div class="card-header">
+    <div className="card text-center">
+      <div className="card-header">
         Featured
       </div>
-      <div class="card-body">
-        <h5 class="card-title">Registros del libro diario</h5>
-        <p class="card-text">Operaciones del día: 06/06/2024</p>
+      <div className="card-body">
+        <h5 className="card-title">Registros del libro diario</h5>
+        <p className="card-text">Operaciones del día: 06/06/2024</p>
         <Row>
-          <div class="col-sm-8">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">--------------x------------</h5>
-                <p class="card-text">65 OTROS GASTOS DE GESTIÓN</p>
-                <p class="card-subtext"> 655 Costo neto de enajenación de activos inmovilizados y operaciones discontinuadas</p>
+          <div className="col-sm-8">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">--------------x------------</h5>
+                <p className="card-text">65 OTROS GASTOS DE GESTIÓN</p>
+                <p className="card-subtext"> 655 Costo neto de enajenación de activos inmovilizados y operaciones discontinuadas</p>
               </div>
             </div>
           </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Debe</h5>
-                <p class="card-text">80000</p>
+          <div className="col-sm-2">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Debe</h5>
+                <p className="card-text">80000</p>
               </div>
             </div>
           </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Haber</h5>
-                <p class="card-text">80000</p>
+          <div className="col-sm-2">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Haber</h5>
+                <p className="card-text">80000</p>
               </div>
             </div>
           </div>
         </Row>
         <Row>
-          <div class="col-sm-8">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">--------------x------------</h5>
-                <p class="card-text">39 DEPRECIACIÓN Y AMORTIZACIÓN ACUMULADOS</p>
+          <div className="col-sm-8">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">--------------x------------</h5>
+                <p className="card-text">39 DEPRECIACIÓN Y AMORTIZACIÓN ACUMULADOS</p>
               </div>
             </div>
           </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Debe</h5>
-                <p class="card-text">80000</p>
+          <div className="col-sm-2">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Debe</h5>
+                <p className="card-text">80000</p>
               </div>
             </div>
           </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Haber</h5>
-                <p class="card-text">80000</p>
+          <div className="col-sm-2">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Haber</h5>
+                <p className="card-text">80000</p>
               </div>
             </div>
           </div>
         </Row>
-        <a href="/" class="btn btn-primary">Go somewhere</a>
+        <Row className="row justify-content-start mt-4">
+          <div className="col-1">
+            <Link to="/" className="btn btn-primary">Agregar</Link>
+          </div>
+          <div className="col-1">
+            <Link to="/" className="btn btn-primary">Eliminar</Link>
+          </div>
+        </Row>        
       </div>
-      <div class="card-footer text-muted">
+      <div className="card-footer text-muted">
         2 days ago
       </div>
     </div>
