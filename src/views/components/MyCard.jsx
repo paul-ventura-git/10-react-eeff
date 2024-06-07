@@ -16,7 +16,7 @@ function MyCard( props ) {
             <thead className='table-light'>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">-----------------------x-------------------</th>
+                <th scope="col">---------------------x-------------------</th>
                 <th scope="col">Debe</th>
                 <th scope="col">Haber</th>
               </tr>
@@ -53,8 +53,43 @@ function MyCard( props ) {
                 <td>-</td>
                 <td>59,000</td>
               </tr>
-            </tbody> 
+            </tbody>             
+          </table>          
+          <p className="card-subtext text-start fst-italic">x/x Por el anticipo otorgado a una entidad relacionada</p>
+
+          <table className="table table-sm">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">------------------------------------------------------------x------------------------------------------------------------</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">43</th>
+                <td >
+                  <p className='text-start fw-bold'>CUENTAS POR PAGAR COMERCIALES RELACIONADAS</p>
+                  <p className="card-subtext text-start"> 431 Facturas, boletas y otros comprobantes por pagar</p>
+                  <p className="card-subtext text-start"> 4312 Emitidas</p>
+                </td>
+                <td>59,000</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td >
+                  <p className='text-start fw-bold'>EFECTIVO Y EQUIVALENTES DE EFECTIVO</p>
+                  <p className="card-subtext text-start"> 104 Cuentas corrientes en instituciones financieras</p>
+                  <p className="card-subtext text-start"> 1041 Cuentas corrientes operativas</p>
+                </td>
+                <td>-</td>
+                <td>59,000</td>
+              </tr>
+            </tbody>             
           </table>
+          <p className="card-subtext text-start fst-italic">x/x Por la cancelación de la factura por pagar</p>
           <Row className="row justify-content-start mt-4">
             <div className="col-1">
               <Link to="/" className="btn btn-primary">Agregar</Link>
@@ -77,13 +112,13 @@ function MyCard( props ) {
             </thead>
             <tbody>
               <tr>
-                <th scope="row">43</th>
+                <th scope="row">60</th>
                 <td >
-                  <p className='text-start fw-bold'>CUENTAS POR PAGAR COMERCIALES RELACIONADAS</p>
-                  <p className="card-subtext text-start"> 432 Anticipos otorgados</p>
-                  <p className="card-subtext text-start"> 4321 Anticipos otorgados</p>
+                  <p className='text-start fw-bold'>COMPRAS</p>
+                  <p className="card-subtext text-start"> 601 Mercaderías</p>
+                  <p className="card-subtext text-start"> 6011 Mercaderías</p>
                 </td>
-                <td>50,000</td>
+                <td>90,000</td>
                 <td>-</td>
               </tr>
               <tr>
@@ -94,7 +129,7 @@ function MyCard( props ) {
                   <p className="card-subtext text-start"> 4011 Impuesto general a las ventas</p>
                   <p className="card-subtext text-start"> 40116 IGV destinado a operaciones gravadas</p>
                 </td>
-                <td>9,000</td>
+                <td>7,200</td>
                 <td>-</td>
               </tr>
               <tr>
@@ -103,9 +138,11 @@ function MyCard( props ) {
                   <p className='text-start fw-bold'>CUENTAS POR PAGAR COMERCIALES RELACIONADAS</p>
                   <p className="card-subtext text-start"> 431 Facturas, boletas y otros comprobantes por pagar</p>
                   <p className="card-subtext text-start"> 4312 Emitidas</p>
+                  <p className="card-subtext text-start"> 432 Anticipos otorgados</p>
+                  <p className="card-subtext text-start"> 4321 Anticipos otorgados</p>
                 </td>
                 <td>-</td>
-                <td>59,000</td>
+                <td>97,200</td>
               </tr>
             </tbody> 
           </table>
