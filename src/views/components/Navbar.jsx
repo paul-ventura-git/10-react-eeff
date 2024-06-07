@@ -29,6 +29,20 @@ function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" to="/librodiario">Libro Diario</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/librodiario">Libro Mayor</Link>
+            </li>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Estados Financieros
+              </a>
+              <ul className="dropdown-menu">
+                <li><Link className="dropdown-item" to="/cruduser">Balance General</Link></li>
+                <li><Link className="dropdown-item" to="/crudproduct">Estado de Ganancias y Pérdidas</Link></li>
+                <li><hr className="dropdown-divider" /></li>
+                <li><a className="dropdown-item" href="/">Something else here</a></li>
+              </ul>
+            </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Administración
@@ -47,8 +61,8 @@ function Navbar() {
 
           { user.username ? (
             <>
-              <div className='nav-item' style={{color:"white"}}>Welcome, { user ? user.username : ""}</div>
-              <button className="btn btn-success" onClick={backTo} style={{marginLeft: "10px"}}>Sign Out</button>
+              <div className='nav-item' style={{color:"white"}}>Bienvenido, { user ? user.username : ""}</div>
+              <button className="btn btn-success" onClick={backTo} style={{marginLeft: "10px"}}>Cerrar sesión</button>
             </>
           ) : (
             <>
